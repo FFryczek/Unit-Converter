@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Unit Converter</title>
+	<script src="scpt.js"></script>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+<header class="hd">
+	<h1>Unit Converter</h1>
+	</header>
+	<nav>
+		<ul>
+			<li>
+				<a class="navtab" href="#disconv"> 
+				Distance
+				</a>
+			</li>
+			<li>
+				<a class="navtab" href="#tconv">
+				Temperature
+				</a>
+			</li>
+			<li>
+				<a class="navtab" href="#weiconv">
+				Weight
+				</a>
+			</li>
+		</ul>
+	</nav>
+<body>
+	<br><br>
+	<div class="mbox">
+		<fieldset id="disconv">
+			<legend>KM vs MI</legend>
+			<div class="units">
+				<div class="sunit">
+					<label for="KM">Kilometers:</label>
+					<input type="number" id="KM">
+				</div>
+				<div class="sunit">
+					<label for="MI">Miles:</label>
+					<input type="number" id="MI"></div>
+			</div>
+			<button onclick="return decider1()" class="convb">Convert</button>
+		</fieldset>
+	</div>
+	<br><br>
+		<div class="mbox">
+		<fieldset id="tconv">
+			<legend>C vs F</legend>
+			<div class="unit">
+				<div class="sunit">
+					<label for="C">Celcius :</label>
+					<input type="number" id="C">
+				</div>
+				<div class="sunit">
+					<label for="FR">Fahrenheit:</label>
+					<input type="number" id="FR"></div>
+			</div>
+			<button onclick="return decider2()" class="convb">Convert</button>
+		</fieldset>
+	</div>
+	<br><br>
+		<div class="mbox">
+		<fieldset id="weiconv">
+			<legend>KG vs LBS</legend>
+			<div class="unit">
+				<div class="sunit"> 
+					<label for="KG">Kilograms:</label>
+					<input type="number" id="KG">
+				</div>
+				<div class="sunit">
+					<label for="PD">Pounds:</label>
+					<input type="number" id="PD"></div>
+			</div>
+			<button onclick="return decider3()" class="convb">Convert</button>
+		</fieldset>
+	</div>
+</body>
+</html>
